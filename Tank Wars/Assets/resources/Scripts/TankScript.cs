@@ -63,6 +63,9 @@ public class TankScript : MonoBehaviour {
         transform.localScale = new Vector3(scaleX, scaleYZ, scaleYZ);
         Movement();
         GunControl();
+    }
+
+    void FixedUpdate() {
         Fire();
     }
 
@@ -128,7 +131,5 @@ public class TankScript : MonoBehaviour {
             newBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.up * newBullet.GetComponent<TankBullet>().upForce * angle, ForceMode2D.Force);
             Physics2D.IgnoreCollision(transform.GetComponent<Collider2D>(), newBullet.GetComponent<Collider2D>());
         }
-        if (newBullet != null)
-            Destroy(newBullet, 5);
     }
 }

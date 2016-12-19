@@ -26,10 +26,9 @@ public class TankBullet : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D col) {
-
-
-        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-
-        Destroy(gameObject);
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        gameObject.transform.GetChild(0).gameObject.transform.SetParent(null);
     }
 }
