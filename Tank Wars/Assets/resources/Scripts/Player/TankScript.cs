@@ -10,6 +10,7 @@ public class TankScript : MonoBehaviour {
     [Header("movement variables")]
     public string horizontalAxis;       //input for moving
     private float speed;                // tank speed for moving
+    private float minSpeed;             // tanks minimum speed
     private float maxSpeed;             // The tanks max speed
     private float acceleration;         // acceleration of the tank 
     private float decelaration;         // slowing the tank down
@@ -44,13 +45,14 @@ public class TankScript : MonoBehaviour {
     private Animator anim;              // animator of the tank
 
     [Header("Particles")]
-    public GameObject dustParticles;    // dust particles when driving fast
+    public ParticleSystem dustParticles;    // dust particles when driving fast
 
     // Use this for initialization
     void Start() {
         rigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         speed = 30;
+        minSpeed = speed;
         scaleX = 1;
         acceleration = 1.005f;
         decelaration = 1.5f;
@@ -76,22 +78,22 @@ public class TankScript : MonoBehaviour {
     private void Movement() {
         anim.SetFloat("Speed", Input.GetAxis(horizontalAxis));
         if (Input.GetAxis(horizontalAxis) > .1f) {
-            dustParticles.SetActive(true);
+            dustParticles.enableEmission = true;
             speed *= acceleration;
             rigidbody.velocity = new Vector2(speed * Time.deltaTime, 0);
             scaleX = 1;
         }
         else if (Input.GetAxis(horizontalAxis) < -.1f) {
-            dustParticles.SetActive(true);
+            dustParticles.enableEmission = true;
             speed *= acceleration;
             rigidbody.velocity = new Vector2(-speed * Time.deltaTime, 0);
             scaleX = -1;
         }
         else {
             speed -= decelaration;
-            if (speed <= 30) {
-                speed = 30;
-                dustParticles.SetActive(false);
+            if (speed <= minSpeed) {
+                speed = minSpeed;
+                dustParticles.enableEmission = false;
             }
         }
 

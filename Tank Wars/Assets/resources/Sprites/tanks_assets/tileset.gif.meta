@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6d44a8b23f8bce4448454d751310300a
-timeCreated: 1477647506
+timeCreated: 1482156056
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -77,7 +77,7 @@ TextureImporter:
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -90,7 +90,7 @@ TextureImporter:
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -103,7 +103,7 @@ TextureImporter:
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -116,7 +116,7 @@ TextureImporter:
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -129,7 +129,7 @@ TextureImporter:
         height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -142,7 +142,7 @@ TextureImporter:
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -155,20 +155,20 @@ TextureImporter:
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: tileset_7
       rect:
         serializedVersion: 2
-        x: 146
+        x: 145
         y: 0
-        width: 45
-        height: 47
+        width: 46
+        height: 48
       alignment: 9
       pivot: {x: 0.57612383, y: 0.49006164}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -181,7 +181,7 @@ TextureImporter:
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -194,7 +194,7 @@ TextureImporter:
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       tessellationDetail: 0
     outline: []
