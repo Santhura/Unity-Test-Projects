@@ -40,6 +40,7 @@ public class TankBullet : MonoBehaviour {
         particle.transform.SetParent(null);
         Destroy(particle, 1f);
         Destroy(gameObject);
+        
 
         // TODO: when there are enemies, do damage on the enemies and/or destroy it.
     }
